@@ -47,4 +47,9 @@ public class FunctionClass {
         node.next = currentNode.next;
         currentNode.next = node;
     }
+
+    public void deleteFirst() {
+        Node currentNode = head;
+        head = head.next;
+    }
 }
