@@ -16,4 +16,15 @@ public class FunctionClass {
             currentNode = currentNode.next;
         }
     }
+
+    public void appendingNode(int before, int data) {
+        Node currentNode = head;
+        while (currentNode.data != before) {
+            currentNode = currentNode.next;
+        }
+        Node node = new Node(data);
+        node.next = currentNode.next;
+        currentNode.next = node;
+
+    }
 }
