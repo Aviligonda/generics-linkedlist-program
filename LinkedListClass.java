@@ -8,5 +8,10 @@ public class LinkedListClass {
         list.add(30);
         list.add(70);
         System.out.println("Simple Linked list is :"+ list);
+        FunctionClass functionClass=new FunctionClass();
+        functionClass.insertFirstNode(70);
+        functionClass.insertFirstNode(30);
+        functionClass.insertFirstNode(56);
+        functionClass.toPrint();
     }
 }
