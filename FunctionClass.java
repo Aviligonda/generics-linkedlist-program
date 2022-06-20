@@ -8,6 +8,16 @@ public class FunctionClass {
         head = node;
     }
 
+    public void insertLast(int data) {
+        Node currentNode = head;
+        while (currentNode.next != null) {
+            currentNode = currentNode.next;
+        }
+        Node node = new Node(data);
+        node.setData(data);
+        currentNode.setNext(node);
+    }
+
     public void toPrint() {
         Node currentNode = head;
         System.out.println("Generics LinkedList is :");
@@ -26,5 +36,15 @@ public class FunctionClass {
         node.next = currentNode.next;
         currentNode.next = node;
 
+    }
+
+    public void insertInBetween(int before, int after, int data) {
+        Node currentNode = head;
+        while (currentNode.data != before && currentNode.data != after) {
+            currentNode = currentNode.next;
+        }
+        Node node = new Node(data);
+        node.next = currentNode.next;
+        currentNode.next = node;
     }
 }
