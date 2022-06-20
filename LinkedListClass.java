@@ -5,11 +5,9 @@ public class LinkedListClass {
         functionClass.insertFirstNode(56);
         functionClass.insertLast(70);
         functionClass.insertInBetween(56, 70, 30);
-        functionClass.toPrint();
-        functionClass.findNode(30);
         functionClass.appendingNode(30,40);
         functionClass.toPrint();
-        functionClass.deleteAnyNode(40);
+        functionClass.ascendingOrder();
         functionClass.toPrint();
     }
 }
