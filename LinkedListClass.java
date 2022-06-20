@@ -6,7 +6,7 @@ public class LinkedListClass {
         functionClass.insertLast(70);
         functionClass.insertInBetween(56, 70, 30);
         functionClass.toPrint();
-        functionClass.deleteFirst();
+        functionClass.deleteLast();
         functionClass.toPrint();
     }
 }
