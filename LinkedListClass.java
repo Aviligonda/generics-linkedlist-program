@@ -7,6 +7,7 @@ public class LinkedListClass {
         functionClass.insertInBetween(56, 70, 30);
         functionClass.toPrint();
         functionClass.findNode(30);
+        functionClass.appendingNode(30,40);
         functionClass.toPrint();
     }
 }
